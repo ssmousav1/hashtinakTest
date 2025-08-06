@@ -49,7 +49,13 @@ npm install
 - The `.env` file is already configured with the provided OpenAI API key
 - Default port is 3002
 
-4. Start the backend server:
+```
+//.env
+OPENAI_API_KEY={api key}
+PORT=3002
+```
+
+1. Start the backend server:
 ```bash
 npm run start:dev
 ```
@@ -71,7 +77,10 @@ npm install
 3. Configure environment variables:
 - The `.env.local` file is already configured
 - Points to backend at http://localhost:3002
-
+```
+//.env.local
+NEXT_PUBLIC_API_URL=http://localhost:3002
+```
 4. Start the development server:
 ```bash
 npm run dev
